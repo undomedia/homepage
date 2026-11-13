@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>관리페이지 | UNDOMEDIA</title>
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="admin.css">
+  <script src="data.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+
+<body>
+  <header class="bar">
+    <a class="bar-brand" href="index.html" target="_blank" rel="noopener"><img src="assets/brand/logo-horizontal-dark.svg" alt="UNDOMEDIA" width="122" height="22"><span>관리페이지</span></a>
+    <p class="bar-state" id="state" role="status"></p>
+    <button class="button ghost" id="connect" type="button">홈페이지 폴더 연결</button>
+    <a class="button ghost" href="index.html" target="_blank" rel="noopener">홈페이지 보기</a>
+    <button class="button primary" id="save" type="button">저장</button>
+  </header>
+
+  <p class="notice" id="notice" hidden></p>
+
+  <div class="layout">
+    <nav class="menu" id="menu" aria-label="관리 항목"></nav>
+    <main class="panel" id="panel"></main>
+  </div>
+
+  <!-- 영상 등록·수정 창 -->
+  <dialog class="work-editor" id="work-editor" aria-labelledby="work-editor-title">
+    <form method="dialog" id="work-form">
+      <h2 id="work-editor-title">영상 등록</h2>
+      <div class="work-editor-body" id="work-editor-body"></div>
+      <p class="form-error" id="work-error" role="alert"></p>
+      <div class="work-editor-actions">
+        <button class="button ghost" type="button" id="work-cancel">취소</button>
+        <button class="button primary" type="submit">적용</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- GitHub 연결 창 (인터넷에서 열었을 때만 씁니다) -->
+  <dialog class="work-editor key-dialog" id="key-dialog" aria-labelledby="key-title">
+    <form id="key-form">
+      <h2 id="key-title">GitHub 연결</h2>
+      <div class="work-editor-body">
+        <p class="key-lead">GitHub 에서 만든 <b>연결 열쇠</b>를 붙여 넣어주세요. 열쇠는 이 브라우저에만 보관되고, 저장할 때 GitHub 로만 보내집니다.</p>
+        <label class="field"><span class="field-label">연결 열쇠 (github_pat_ 로 시작)</span>
+          <input type="password" id="key-input" autocomplete="off" spellcheck="false">
+        </label>
+      </div>
+      <p class="form-error" id="key-error" role="alert"></p>
+      <div class="work-editor-actions">
+        <button class="button ghost" type="button" id="key-remove" hidden>연결 지우기</button>
+        <button class="button ghost" type="button" id="key-cancel">취소</button>
+        <button class="button primary" type="submit">연결</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="toast" id="toast" role="status" hidden></p>
+</body>
+
+</html>

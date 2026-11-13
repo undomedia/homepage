@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT | UNDOMEDIA</title>
+  <meta name="description" content="언도미디어 프로젝트 문의. 홍보영상, 모션그래픽, 교육영상, 방송 및 AI 콘텐츠, 유튜브 콘텐츠 제작을 상담하세요.">
+  <meta name="theme-color" content="#002855">
+  <link rel="canonical" href="https://www.undomedia.co.kr/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="UNDOMEDIA">
+  <meta property="og:title" content="CONTACT | UNDOMEDIA">
+  <meta property="og:description" content="아직 구체적인 기획이 없어도 괜찮습니다. 만들고 싶은 영상에 대해 편하게 들려주세요.">
+  <meta property="og:url" content="https://www.undomedia.co.kr/contact.html">
+  <meta property="og:image" content="https://www.undomedia.co.kr/assets/brand/share.jpg">
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body class="inner contact-page">
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="언도미디어 홈">
+      <img class="logo-on-light" src="assets/brand/logo-horizontal-dark.svg" alt="UNDOMEDIA" width="203" height="36">
+      <img class="logo-on-dark" src="assets/brand/logo-horizontal-light.svg" alt="" width="203" height="36" aria-hidden="true">
+    </a>
+    <nav class="site-nav" aria-label="주 메뉴">
+      <a href="works.html">WORKS</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="contact.html" aria-current="page">CONTACT</a>
+    </nav>
+    <a class="inquiry-link" href="contact.html#inquiry">프로젝트 문의</a>
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden>
+      <a href="works.html">WORKS</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="contact.html" aria-current="page">CONTACT</a>
+    </nav>
+  </header>
+
+  <main id="main" class="contact-main">
+    <div class="wrap contact-layout">
+
+      <section class="company" aria-labelledby="company-title">
+        <h1 id="company-title"><img src="assets/brand/logo-horizontal-dark.svg" alt="UNDOMEDIA" width="203" height="36"></h1>
+        <p class="company-motto" data-text="company.motto">폭넓은 스펙트럼으로<br>깊이 있는 콘텐츠를 만들다.</p>
+        <dl class="company-details">
+          <div><dt>문의메일</dt><dd><a href="mailto:contact@undomedia.co.kr" data-text="company.email" data-link="mailto">contact@undomedia.co.kr</a></dd></div>
+          <div><dt>연락처</dt><dd><a href="tel:01023822470" data-text="company.phone" data-link="tel">010-2382-2470</a></dd></div>
+          <div><dt>제작실</dt><dd data-text="company.studio">서울시 강서구 마곡동9 놀라움마곡 905호</dd></div>
+          <div><dt>기획실</dt><dd data-text="company.planning">인천 부평구 충선로 203번길 16 창성프라자 5층</dd></div>
+        </dl>
+
+        <section class="reviews" aria-labelledby="reviews-title">
+          <div class="reviews-head">
+            <div>
+              <h2 id="reviews-title">고객 후기</h2>
+              <p>함께 만든 담당자분들이 직접 남긴 한 줄</p>
+            </div>
+            <button class="reviews-toggle" type="button" aria-label="후기 흐름 일시정지" aria-pressed="false" aria-controls="review-carousel"></button>
+          </div>
+          <p class="review-example-note">구성 확인용 예시입니다. 실제 후기는 추후 반영됩니다.</p>
+          <div class="review-carousel" id="review-carousel" tabindex="0" role="region" aria-label="고객 후기 목록">
+            <div class="review-track"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="inquiry" id="inquiry" aria-labelledby="inquiry-title">
+        <div class="inquiry-head">
+          <h2 id="inquiry-title">프로젝트 문의</h2>
+          <p>정해진 내용만 편하게 알려주세요.</p>
+        </div>
+        <form id="inquiry-form" class="inquiry-form" action="https://formsubmit.co/contact@undomedia.co.kr" method="POST">
+          <input type="hidden" name="_subject" value="[UNDOMEDIA] 새로운 프로젝트 문의">
+          <input type="hidden" name="_template" value="table">
+          <label class="honeypot" aria-hidden="true">이 항목은 비워주세요<input name="_honey" autocomplete="off" tabindex="-1"></label>
+
+          <fieldset class="form-part">
+            <legend>담당자 정보 <span class="badge badge-required">필수</span></legend>
+            <div class="field-grid">
+              <label class="field">이름 · 직함<input name="name" autocomplete="name" required maxlength="50" placeholder="성함 / 직함"></label>
+              <label class="field">회사 · 기관명<input name="company" autocomplete="organization" required maxlength="80" placeholder="회사 또는 브랜드"></label>
+              <label class="field">연락처<input name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="010-0000-0000"></label>
+              <label class="field">이메일<input name="email" type="email" autocomplete="email" required maxlength="120" placeholder="name@company.com"></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-part">
+            <legend>프로젝트 정보 <span class="badge">선택</span><small>아직 미정이면 비워두셔도 됩니다.</small></legend>
+            <fieldset class="chip-group">
+              <legend>영상 종류</legend>
+              <div class="chips">
+                <label><input type="radio" name="type" value="홍보영상"><span>홍보영상</span></label>
+                <label><input type="radio" name="type" value="모션그래픽"><span>모션그래픽</span></label>
+                <label><input type="radio" name="type" value="교육영상"><span>교육영상</span></label>
+                <label><input type="radio" name="type" value="방송 및 AI 콘텐츠"><span>방송 및 AI 콘텐츠</span></label>
+                <label><input type="radio" name="type" value="유튜브 콘텐츠"><span>유튜브 콘텐츠</span></label>
+                <label><input type="radio" name="type" value="협의 후 결정" checked><span>협의 후 결정</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="chip-group">
+              <legend>예산 범위</legend>
+              <div class="chips">
+                <label><input type="radio" name="budget" value="300만원 미만"><span>300만원 미만</span></label>
+                <label><input type="radio" name="budget" value="300만~1,000만원"><span>300만~1,000만원</span></label>
+                <label><input type="radio" name="budget" value="1,000만원 이상"><span>1,000만원 이상</span></label>
+                <label><input type="radio" name="budget" value="협의 후 결정" checked><span>협의 후 결정</span></label>
+              </div>
+            </fieldset>
+            <label class="field">문의 내용<textarea name="message" maxlength="3000" rows="3" placeholder="영상의 목적, 필요한 작업, 궁금한 점을 알려주세요."></textarea></label>
+          </fieldset>
+
+          <div class="inquiry-submit">
+            <p class="form-status" role="status" id="form-status">입력하신 연락처로 답변드리겠습니다.</p>
+            <button class="inquiry-send" type="submit"><span class="send-label">문의 보내기</span></button>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="언도미디어 홈"><img src="assets/brand/logo-horizontal-light.svg" alt="UNDOMEDIA" width="203" height="36"></a>
+          <p data-text="company.motto">폭넓은 스펙트럼으로<br>깊이 있는 콘텐츠를 만들다.</p>
+        </div>
+        <dl class="footer-info">
+          <div><dt>문의메일</dt><dd><a href="mailto:contact@undomedia.co.kr" data-text="company.email" data-link="mailto">contact@undomedia.co.kr</a></dd></div>
+          <div><dt>연락처</dt><dd><a href="tel:01023822470" data-text="company.phone" data-link="tel">010-2382-2470</a></dd></div>
+          <div><dt>사업자등록번호</dt><dd data-text="company.bizNumber">636-10-00865</dd></div>
+        </dl>
+        <div class="footer-column">
+          <dl class="footer-info">
+            <div><dt>제작실</dt><dd data-text="company.studio">서울시 강서구 마곡동9 놀라움마곡 905호</dd></div>
+            <div><dt>기획실</dt><dd data-text="company.planning">인천 부평구 충선로 203번길 16 창성프라자 5층</dd></div>
+          </dl>
+          <!-- 인스타그램: 원 안의 아이콘과 아이디가 모두 링크입니다. 아이콘 파일은 관리페이지에서 올립니다. -->
+          <a class="footer-insta" href="https://www.instagram.com/undomedia_of/" data-href="company.instagram" data-handle target="_blank" rel="noopener noreferrer" aria-label="인스타그램 undomedia_of">
+            <span class="insta-icon" aria-hidden="true"><img alt="" data-src="company.instagramIcon"></span>
+            <span data-handle-label>undomedia_of</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 UNDOMEDIA. All rights reserved.</p>
+        <a href="#" class="to-top">맨 위로</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
