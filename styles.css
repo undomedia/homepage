@@ -546,12 +546,13 @@ html.paged { scroll-snap-type: none; scroll-behavior: auto; }
 .home .closing { scroll-snap-align: start; }
 
 /* 고객 로고: 세 줄이 천천히 흐릅니다. 마우스를 올리면 그 줄이 멈추고 로고에 색이 입혀집니다. */
-.clients { padding-bottom: clamp(14px, 2vh, 44px); }
+/* 로고 위(제목과 로고 사이)와 로고 아래의 여유 공간입니다. 숫자를 키우면 더 넓어집니다. */
+.clients { padding-bottom: clamp(24px, 3.8vh, 60px); }
 .clients-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 32px; }
 .clients-head h2 { font-size: clamp(19px, 2vw, 30px); font-weight: 700; line-height: 1.4; letter-spacing: -.04em; }
 .clients-head p { font-size: 13px; color: var(--muted); }
 .client-rows {
-  margin-top: clamp(8px, 1.8vh, 22px);
+  margin-top: clamp(18px, 3.4vh, 44px);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
 }
@@ -582,7 +583,7 @@ html.paged { scroll-snap-type: none; scroll-behavior: auto; }
 @keyframes client-flow { to { transform: translateX(var(--loop, -33.3333%)); } }
 
 /* ---------- 메인: 프로젝트 문의 (촬영 슬레이트) ---------- */
-.start { flex: 1; display: flex; align-items: center; padding-block: clamp(18px, 2.6vh, 56px) clamp(12px, 1.6vh, 44px); }
+.start { flex: 1; display: flex; align-items: center; padding-block: clamp(14px, 1.8vh, 56px) clamp(8px, 1vh, 44px); }
 .start > .wrap { min-width: 0; }
 .start-layout {
   display: grid;
@@ -621,8 +622,8 @@ html.paged { scroll-snap-type: none; scroll-behavior: auto; }
 .slate:hover .slate-clap, .slate:focus-within .slate-clap { transform: rotate(-11deg); }
 .slate.is-clapped .slate-clap { transform: rotate(0); transition-duration: .1s; }
 .slate-board { padding: clamp(16px, 1.4vw, 24px); border-radius: 0 0 4px 4px; color: #fff; background: var(--ink); }
-.slate-head { padding-bottom: 10px; font-size: 11px; letter-spacing: .14em; color: rgb(255 255 255 / .6); }
-.slate-line { display: block; padding: 7px 0 8px; border-top: 1px solid rgb(255 255 255 / .18); cursor: text; }
+.slate-head { padding-bottom: 8px; font-size: 11px; letter-spacing: .14em; color: rgb(255 255 255 / .6); }
+.slate-line { display: block; padding: 6px 0 6px; border-top: 1px solid rgb(255 255 255 / .18); cursor: text; }
 .slate-line > span { display: block; font-size: 11px; color: rgb(255 255 255 / .6); }
 .slate-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .slate-pair .slate-line + .slate-line { padding-left: 16px; border-left: 1px solid rgb(255 255 255 / .18); }
@@ -644,7 +645,7 @@ html.paged { scroll-snap-type: none; scroll-behavior: auto; }
 .slate-button {
   width: 100%;
   margin-top: 6px;
-  padding: 11px 18px;
+  padding: 10px 18px;
   border-radius: 3px;
   background: var(--blue);
   font-size: 15px;
@@ -656,7 +657,7 @@ html.paged { scroll-snap-type: none; scroll-behavior: auto; }
 
 /* ---------- 공통 푸터 ---------- */
 .site-footer {
-  padding-block: clamp(16px, 2.8vh, 32px) calc(12px + var(--bar));
+  padding-block: clamp(14px, 2.2vh, 32px) calc(12px + var(--bar));
   font-size: 13px;
   line-height: 1.6;
   color: rgb(255 255 255 / .8);
